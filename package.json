@@ -1,0 +1,28 @@
+{
+  "name": "suman-browser-polyfills",
+  "version": "0.0.1001",
+  "description": "Browser polyfills for heavy backend codebases",
+  "main": "index.js",
+  "scripts": {
+    "test": "suman"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumanjs/suman-browser-polyfills.git"
+  },
+  "keywords": [
+    "suman",
+    "test",
+    "browser",
+    "polyfill",
+    "shim",
+    "node.js",
+    "npm"
+  ],
+  "author": "Olegzandr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumanjs/suman-browser-polyfills/issues"
+  },
+  "homepage": "https://github.com/sumanjs/suman-browser-polyfills#readme"
+}
