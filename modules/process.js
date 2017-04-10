@@ -162,6 +162,11 @@ else {
     },
 
     stdout: {
+
+      write: function (data) {
+        window.console.log(data);
+      },
+
       "connecting": false,
       "_hadError": false,
       "_handle": {"bytesRead": 0, "_externalStream": {}, "fd": 1, "writeQueueSize": 0},
@@ -234,6 +239,11 @@ else {
     },
 
     stderr: {
+
+      write: function (data) {
+        window.console.error(data)
+      },
+
       "connecting": false,
       "_hadError": false,
       "_handle": {"bytesRead": 0, "_externalStream": {}, "fd": 2, "writeQueueSize": 0},
@@ -465,7 +475,7 @@ else {
     },
 
     cwd: function () {
-        return '/';
+      return '/';
     },
 
     umask: function () {
@@ -752,17 +762,18 @@ else {
       }, 5);
       return {};
     },
+    //
+    // nextTick: function () {
+    //   let args = Array.from(arguments);
+    //   setTimeout(function () {
+    //     try {
+    //       args[args.length - 1]()
+    //     } catch (err) {
+    //     }
+    //   }, 0);
+    // },
 
-    nextTick: function () {
-      let args = Array.from(arguments);
-      setTimeout(function () {
-        try {
-          args[args.length - 1]()
-        } catch (err) {
-        }
-      }, 0);
-      return {};
-    },
+    nextTick: window.setImmediate,
 
     _tickCallback: function () {
       let args = Array.from(arguments);
@@ -772,7 +783,6 @@ else {
         } catch (err) {
         }
       }, 5);
-      return {};
     },
 
     _tickDomainCallback: function () {
@@ -783,7 +793,6 @@ else {
         } catch (err) {
         }
       }, 5);
-      return {};
     },
 
     openStdin: function () {
@@ -798,16 +807,19 @@ else {
     },
 
     exit: function (code) {
-      console.error('process.exit called with stack => ', new Error('exitting..').stack);
+      debugger;
+      window.console.error('process.exit called with stack => ', new Error('exiting..').stack);
       let args = Array.from(arguments);
       let fn = args[args.length - 1];
-      if(typeof fn === 'function'){
-         fn(function(){
-           window.close(code);
-         });
+      if (typeof fn === 'function') {
+        fn(function () {
+          window.console.log(' => Closing browser window...');
+          // window.close(code);
+        });
       }
-      else{
-        window.close(code);
+      else {
+        window.console.log(' => Closing browser window...');
+        // window.close(code);
       }
     },
 
@@ -824,8 +836,6 @@ else {
 
   };
 }
-
-
 
 process.__proto__ = Object.create(require('events').prototype);
 module.exports = process;
