@@ -835,7 +835,9 @@ else {
     },
 
   };
+
+  // only modify browser "process"
+  process.__proto__ = Object.create(require('events').prototype);
 }
 
-process.__proto__ = Object.create(require('events').prototype);
 module.exports = process;
