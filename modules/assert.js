@@ -41,7 +41,8 @@ const objectToString = function (val){
     });
   };
 
-const Buffer = require('buffer').Buffer;
+//TODO => Olegzandr commented out the below line
+// const Buffer = require('buffer').Buffer;
 
 // The assert module provides functions that throw
 // AssertionError's when particular conditions are not met. The

@@ -773,7 +773,9 @@ else {
     //   }, 0);
     // },
 
-    nextTick: window.setImmediate,
+    nextTick: window.setImmediate || function(fn){
+        setTimeout(fn, 0);
+    },
 
     _tickCallback: function () {
       let args = Array.from(arguments);
