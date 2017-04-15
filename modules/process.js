@@ -1,9 +1,14 @@
 let process;
 
 if (global && global.process) {
+
+  console.log('global.process is defined...');
+
   process = global.process;
 }
 else {
+
+  console.log('window.process is defined...');
 
   process = window.process = {
 
@@ -829,7 +834,7 @@ else {
       let args = Array.from(arguments);
       setTimeout(function () {
         try {
-          args[args.length - 1]('fs will not work as we are in browser error')
+          args[args.length - 1]('fs DOG will not work as we are in browser error')
         } catch (err) {
         }
       }, 5);
@@ -841,5 +846,6 @@ else {
   // only modify browser "process"
   process.__proto__ = Object.create(require('events').prototype);
 }
+
 
 module.exports = process;

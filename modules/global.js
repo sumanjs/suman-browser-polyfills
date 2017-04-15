@@ -10,7 +10,9 @@ catch (err) {
 
 if (inBrowser) {
 
-  _global = window.global = {
+  _global = window;
+
+    /*.global = {
 
     global: {
       "process": {
@@ -801,7 +803,6 @@ if (inBrowser) {
     },
 
     clearInterval: window.clearInterval,
-
     clearTimeout: window.clearTimeout,
 
     setImmediate: window.setImmediate || function () {
@@ -818,7 +819,7 @@ if (inBrowser) {
     setInterval: window.setInterval,
     setTimeout: window.setTimeout
 
-  };
+  };*/
 }
 
 module.exports = _global;

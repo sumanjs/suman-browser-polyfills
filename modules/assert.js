@@ -22,9 +22,13 @@
 const compare = Buffer.compare;
 
 //polyfills
-const process = require('suman-browser-polyfills/modules/process');
+// const process = require('suman-browser-polyfills/modules/process');
 
 const util = require('util');
+
+console.log(' => process => ',util.inspect(process));
+
+
 const { isSet, isMap } = process.binding('util');
 const objectToString = function (val){
     let cache = [];
