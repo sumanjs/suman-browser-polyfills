@@ -15,7 +15,7 @@ if (inBrowser) {
     };
 
   _global = window;
-  _global.process = require('suman-browser-polyfills/modules/process');
+  _global.process = require('./process');
 
 }
 
