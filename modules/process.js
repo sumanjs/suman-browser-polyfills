@@ -1,14 +1,9 @@
 let process;
 
 if (global && global.process) {
-
-  console.log('global.process is defined...');
-
   process = global.process;
 }
 else {
-
-  console.log('window.process is defined...');
 
   process = window.process = {
 

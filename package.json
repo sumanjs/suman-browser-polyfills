@@ -4,7 +4,7 @@
   "description": "Browser polyfills for heavy backend codebases",
   "main": "index.js",
   "scripts": {
-    "test": "suman"
+    "test": "echo \"this is not how you test, run the test.sh script instead.\"; exit 1;"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,6 @@
     "async": "^2.3.0"
   },
   "devDependencies": {
-    "suman": "^1.1.512225"
+    "suman": "latest"
   }
 }
