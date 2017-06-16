@@ -1,6 +1,6 @@
 {
   "name": "suman-browser-polyfills",
-  "version": "0.0.1005",
+  "version": "0.0.1006",
   "description": "Browser polyfills for heavy backend codebases",
   "main": "index.js",
   "scripts": {
