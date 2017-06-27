@@ -1,4 +1,4 @@
-
+'use strict';
 
 require('ansi-256-colors');
 require('ansi-styles');

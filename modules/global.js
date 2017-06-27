@@ -1,3 +1,5 @@
+'use strict';
+
 let _global, inBrowser;
 
 try {

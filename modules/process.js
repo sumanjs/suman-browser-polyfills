@@ -1,3 +1,5 @@
+'use strict';
+
 let process;
 
 if (global && global.process) {

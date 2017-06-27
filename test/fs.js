@@ -1,4 +1,4 @@
-
+'use strict';
 
 const fs = require('../dest/fs');
 const global = require('../dest/fs');
