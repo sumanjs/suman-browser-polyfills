@@ -1,15 +1,25 @@
 {
-  "name": "suman-browser-polyfills",
-  "version": "0.0.1007",
+  "_id": "suman-browser-polyfills@0.0.1007",
+  "_location": "/suman-browser-polyfills",
+  "_phantomChildren": {},
+  "_requiredBy": [
+    "#EXISTING"
+  ],
+  "author": {
+    "name": "Olegzandr VD"
+  },
+  "bugs": {
+    "url": "https://github.com/sumanjs/suman-browser-polyfills/issues"
+  },
+  "dependencies": {
+    "async": "^2.4.1"
+  },
   "description": "Browser polyfills for heavy backend codebases",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"this is not how you test, run the test.sh script instead.\"; exit 1;"
+  "devDependencies": {
+    "suman": "latest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sumanjs/suman-browser-polyfills.git"
-  },
+  "gitHead": "896166408696f8fb11f89dd301df9a6cd9c3cf61",
+  "homepage": "https://github.com/sumanjs/suman-browser-polyfills#readme",
   "keywords": [
     "suman",
     "test",
@@ -19,16 +29,17 @@
     "node.js",
     "npm"
   ],
-  "author": "Olegzandr",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sumanjs/suman-browser-polyfills/issues"
+  "main": "index.js",
+  "name": "suman-browser-polyfills",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumanjs/suman-browser-polyfills.git"
   },
-  "homepage": "https://github.com/sumanjs/suman-browser-polyfills#readme",
-  "dependencies": {
-    "async": "^2.4.1"
+  "scripts": {
+    "test": "./@test.sh"
   },
-  "devDependencies": {
-    "suman": "latest"
-  }
+  "version": "0.0.1007"
 }
