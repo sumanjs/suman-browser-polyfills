@@ -15,9 +15,7 @@
     "async": "^2.4.1"
   },
   "description": "Browser polyfills for heavy backend codebases",
-  "devDependencies": {
-    "suman": "latest"
-  },
+  "devDependencies": {},
   "gitHead": "896166408696f8fb11f89dd301df9a6cd9c3cf61",
   "homepage": "https://github.com/sumanjs/suman-browser-polyfills#readme",
   "keywords": [
