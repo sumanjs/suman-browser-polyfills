@@ -41,5 +41,5 @@
   "scripts": {
     "test": "./@test.sh"
   },
-  "version": "0.0.1007"
+  "version": "0.0.1008"
 }
