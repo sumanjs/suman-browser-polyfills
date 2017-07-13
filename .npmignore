@@ -1,6 +1,9 @@
 .idea
 test
 node_modules
+*.log
 *.sh
 *.md
 *.txt
+*.ts
+!*.d.ts
