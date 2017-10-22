@@ -775,8 +775,10 @@ else {
     //   }, 0);
     // },
 
-    nextTick: window.setImmediate || function(fn){
-        setTimeout(fn, 0);
+    nextTick: window.setImmediate || function(){
+        const args = Array.from(arguments);
+        const fn = args.shift();
+        setTimeout(fn.bind(null, ...args), 0);
     },
 
     _tickCallback: function () {
@@ -812,19 +814,7 @@ else {
 
     exit: function (code) {
       debugger;
-      window.console.error('process.exit called with stack => ', new Error('exiting..').stack);
-      let args = Array.from(arguments);
-      let fn = args[args.length - 1];
-      if (typeof fn === 'function') {
-        fn(function () {
-          window.console.log(' => Closing browser window...');
-          // window.close(code);
-        });
-      }
-      else {
-        window.console.log(' => Closing browser window...');
-        // window.close(code);
-      }
+      console.log(' => Closing browser window...code is', code);
     },
 
     kill: function () {
