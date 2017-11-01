@@ -2,6 +2,7 @@
 ### folders
 .idea
 test
+scripts
 node_modules
 
 ### matching
