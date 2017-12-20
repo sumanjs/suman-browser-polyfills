@@ -1,3 +1,3 @@
 # Suman Browser Polyfills
 
-This allows to run Suman in the browser.
+This allows Suman to run in the browser.
