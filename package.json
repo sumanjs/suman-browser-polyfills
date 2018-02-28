@@ -15,7 +15,10 @@
     "async": "^2.4.1"
   },
   "description": "Browser polyfills for heavy backend codebases",
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/core-js": "^0.9.46",
+    "@types/node": "^9.4.6"
+  },
   "gitHead": "16d708a135cf086e1f8e454533c7763ba9225abe",
   "homepage": "https://github.com/sumanjs/suman-browser-polyfills#readme",
   "keywords": [
@@ -27,7 +30,7 @@
     "node.js",
     "npm"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "main": "index.js",
   "name": "suman-browser-polyfills",
   "optionalDependencies": {},
@@ -38,7 +41,7 @@
     "url": "git+https://github.com/sumanjs/suman-browser-polyfills.git"
   },
   "scripts": {
-    "test": "./@test.sh"
+    "test": "./scripts/test.sh"
   },
   "version": "0.0.1009"
 }
