@@ -12,11 +12,10 @@
     "url": "https://github.com/sumanjs/suman-browser-polyfills/issues"
   },
   "dependencies": {
-    "async": "^2.4.1"
+    "async": "^2.6.1"
   },
   "description": "Browser polyfills for heavy backend codebases",
   "devDependencies": {
-    "@types/core-js": "^0.9.46",
     "@types/node": "^9.4.6"
   },
   "gitHead": "16d708a135cf086e1f8e454533c7763ba9225abe",

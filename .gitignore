@@ -2,13 +2,11 @@
 ### folders
 node_modules
 .idea
-.vs_code
 .vscode
-.DS_store
 
 ### files
-package-lock.json
 yarn.lock
 
 ### matching
 *.log
+.DS_store
