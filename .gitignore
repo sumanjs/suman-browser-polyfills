@@ -10,3 +10,7 @@ yarn.lock
 ### matching
 *.log
 .DS_store
+tmp
+temp
+tmp/worktrees
+temp/worktrees
